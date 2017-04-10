@@ -1,0 +1,19 @@
+git init    初始化仓库，创建Git库，在当前生成.git子目录
+git add xxx    工作区内容提交到暂存区
+git commit -t “xxx”  提交到本地库，并写下massage
+git status    查看版本库状态，发现没有添加到暂存库或本地库的文件
+
+git log   查看历史log，每次版本变化，对应有一个commit id
+    git log -1   显示一个commit
+git show
+    git show xxx版本号xxx  查看版本更详细信息
+	git show HEAD 显示当前分支最新版本细节
+git rm xxx    删除目录或文件
+
+
+
+
+
+HEAD   当前分支
+HEAD^  当前分支上一版本
+HEAD~4 当前分支上四版本
