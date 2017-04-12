@@ -18,11 +18,19 @@ f = urllib.urlopen('http://www.ruanyifeng.com/home.html')
 
 class MyHTMLParser(HTMLParser):
 
+	def __init__(self):
+		HTMLParser.__init__(self)
+		self.flag = true
+		
+    def handle_starttag(self, tag, attrs):
+        print('<%s>' % tag)	
+        if tag == 'h3' and attrs.__contains__(('class', 'event-title')):
+        	self.flag = false
     def handle_data(self, data):
+        if self.flag == true:
         print(data)
         
-    def handle_starttag(self, tag, attrs):
-        print('<%s>' % tag)
+
         #print('--**%s**--'%attrs)
 
     #def handle_endtag(self, tag):
