@@ -1,2 +1,4 @@
 lock add 1 line
 lock add 2 line
+remote add 3rd line
+remote add 4th line
