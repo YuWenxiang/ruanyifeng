@@ -1,4 +1,9 @@
 lock add 1 line
 lock add 2 line
+<<<<<<< Updated upstream
 remote add 3rd line
 remote add 4th line
+=======
+local add 3 line
+local add 4 line
+>>>>>>> Stashed changes
